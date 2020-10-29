@@ -32,12 +32,12 @@
     },
     "ubuntuOSVersion": {
       "type": "string",
-      "defaultValue": "16.04.0-LTS",
+      "defaultValue": "18.04-LTS",
       "allowedValues": [
         "12.04.5-LTS",
         "14.04.5-LTS",
-        "15.10",
-        "16.04.0-LTS"
+        "16.00.0-LTS",
+        "18.04-LTS"
       ],
       "metadata": {
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
@@ -49,10 +49,10 @@
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "nicName": "myVMNic",
-    "addressPrefix": "10.0.0.0/16",
+    "addressPrefix": "10.126.181.0/24",
     "subnetName": "Subnet",
-    "subnetPrefix": "10.0.0.0/24",
-    "storageAccountType": "Standard_LRS",
+    "subnetPrefix": "10.126.181.0/25",
+    "storageAccountType": "Premium_LRS",
     "publicIPAddressName": "myPublicIP",
     "publicIPAddressType": "Dynamic",
     "vmName": "MyUbuntuVM",
